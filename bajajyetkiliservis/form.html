@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+<meta charset="UTF-8">
+<title>Arıza Tespit Formu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="logo">PRO<span>MOTO</span></a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="index.html#services">Hizmetler</a></li>
+            <li><a href="liste.php">Kayıtlar</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- FORM SECTION -->
+<section class="section">
+    <div class="container">
+
+        <div class="form-box">
+
+            <h2>Arıza Tespit Formu</h2>
+            <p>Motor sorununu bize detaylı anlat</p>
+
+            <form action="upload.php" method="post">
+
+                <div class="row">
+                    <input type="text" name="musteri_adsoyad" placeholder="Ad Soyad" required>
+                    <input type="email" name="email" placeholder="E-posta" required>
+                </div>
+
+                <input type="text" name="motor_model" placeholder="Motor Modeli (NS200, RS200...)" required>
+
+                <textarea name="sikayet" placeholder="Sorunu detaylı açıklayın..." required></textarea>
+
+                <button type="submit">Gönder</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- INFO -->
+<section class="info">
+    <div class="container">
+        <div class="grid">
+
+            <div class="card">
+                <h3>⚡ Hızlı Servis</h3>
+                <p>24 saat içinde dönüş</p>
+            </div>
+
+            <div class="card">
+                <h3>🔒 Güvenilir</h3>
+                <p>Uzman teknisyenler</p>
+            </div>
+
+            <div class="card">
+                <h3>🛠 Garanti</h3>
+                <p>Tüm işlemler garantili</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

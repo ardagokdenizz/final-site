@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bajaj Servis</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+
+        <a href="index.html" class="logo">BAJAJ<span>SERVİS</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#models">Modeller</a></li>
+            <li><a href="form.html">Arıza Formu</a></li>
+            <li><a href="liste.php">Kayıtlar</a></li>
+            <li><a href="login.php">Admin</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero">
+    <div>
+        <h1>DOMINAR & PULSAR SERVİS</h1>
+        <p>Profesyonel bakım ve onarım merkezi</p>
+    </div>
+</header>
+
+<!-- HİZMETLER -->
+<section id="services" class="section">
+    <div class="container">
+        <div class="section-header">
+    <h2>Hizmetlerimiz</h2>
+    <p>Profesyonel bakım ve servis çözümleri</p>
+</div>
+        <p>Motor bakım, onarım ve orijinal parça hizmeti</p>
+    </div>
+</section>
+
+<!-- MODELLER (FIXLİ KRİTİK KISIM) -->
+<section id="models" class="section">
+
+    <div class="container">
+
+        <h2>Modeller</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="ns200.jpg" style="width:100%;border-radius:10px;">
+                <h3>NS200</h3>
+            </div>
+
+            <div class="card">
+                <img src="dominar.jpg" style="width:100%;border-radius:10px;">
+                <h3>Dominar 400</h3>
+            </div>
+
+            <div class="card">
+                <img src="rs200.jpg" style="width:100%;border-radius:10px;">
+                <h3>RS200</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- YORUM -->
+<section class="section">
+    <div class="container">
+
+        <h2>Yorum Yap</h2>
+
+        <form action="yorum.php" method="post">
+            <input name="ad" placeholder="Ad">
+            <textarea name="yorum" placeholder="Yorum"></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+
+        <br>
+<a href="yorum_liste.php" class="feature-card">
+    <div class="icon">💬</div>
+    <h3>Tüm Yorumlar</h3>
+    <p>Kullanıcı yorumlarını incele</p>
+</a>
+
+    </div>
+</section>
+
+</body>
+</html>
+<section class="feature-section">
+
+    <div class="container">
+
+        <h2 class="section-title">Hızlı Erişim</h2>
+
+        <div class="feature-grid">
+
+            <!-- HİZMETLER -->
+            <a href="#services" class="feature-card">
+                <div class="icon">🛠️</div>
+                <h3>Hizmetler</h3>
+                <p>Bakım, onarım ve profesyonel servis çözümleri</p>
+                <span>Keşfet →</span>
+            </a>
+
+            <!-- MODELLER -->
+            <a href="#models" class="feature-card">
+                <div class="icon">🏍️</div>
+                <h3>Modeller</h3>
+                <p>NS200, RS200 ve Dominar modellerini incele</p>
+                <span>İncele →</span>
+            </a>
+
+            <!-- YORUMLAR -->
+            <a href="yorum_liste.php" class="feature-card">
+                <div class="icon">💬</div>
+                <h3>Yorumlar</h3>
+                <p>Kullanıcı yorumlarını görüntüle ve katkı sağla</p>
+                <span>Git →</span>
+            </a>
+
+            <!-- YORUM YAP -->
+            <a href="#comment-form" class="feature-card">
+                <div class="icon">✍️</div>
+                <h3>Yorum Yap</h3>
+                <p>Deneyimini paylaş ve topluluğa katkı sağla</p>
+                <span>Yaz →</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
